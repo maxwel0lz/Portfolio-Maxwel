@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Space+Grotesk:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body{
+    font-family: 'Space Grotesk', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(40,40,40,0.98);;
+}
+                /*Barra de Navegaão*/
+
+nav img{
+    width: 12rem;
+    margin: 0 50px;
+    width: 12rem;
+}
+nav img:hover {
+    transition: 0.25s;
+    width: 12.5rem;
+    border-radius: 5%;
+    background-color: rgba(255,255,255,0.05);; 
+}
+#nav{
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+#navLink{
+    font-size: 25px;
+    margin: 0 90px;
+    align-items: center;
+    height: 100%;
+    display: flex;
+    
+
+}
+#navLink h6{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1.13px;
+    display: flex;
+    justify-content: center;
+    margin: 0 1.5rem;
+    padding: 20px 25px;
+    width: 7rem;
+    
+}
+#navLink h6:hover {
+    transition: 0.30s;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 1.15px;
+    color:rgba(0,100,200,1);
+    border-radius: 5%;
+    background-color: rgba(255,255,255,0.05);
+}
+
+                    /*Corpo do site*/
+
+#session1{
+    
+    margin-top: 70px;  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#apresenta{
+    padding: 50px;
+    height: 100%;
+}
+#apresenta h1{
+    font-size: 2.1rem;
+}
+#foto{
+
+}
+#foto img{
+    opacity: 0.9;
+    width: 15rem;
+    border: 3.5px solid ;
+    border-radius: 50%;
+    justify-content: center;
+}
+#foto img:hover {
+    transition: 0.1s;
+    border: 3.5px solid rgba(0,74,173);
+}
+
+#seta  { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*border: 1px solid red;*/
+}
+#seta img {
+    padding: 20px;
+    width: 2rem;
+    border-radius: 50%;
+    transition: 0.1s;
+
+}
+
+#seta img:hover{
+    width: 2.3rem;
+    padding: 20px;
+    border-radius: 50%;
+    
+}
+
+
+
+

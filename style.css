@@ -1,12 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Space+Grotesk:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+* {
+    box-sizing: border-box;
+}
 body{
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: white;
     margin: 0;
     padding: 0;
-    background-color: rgba(40,40,40,0.98);;
+    background-color: rgba(40,40,40,0.98);
 }
                 /*Barra de Navegaão*/
 
@@ -19,7 +21,7 @@ nav img:hover {
     transition: 0.25s;
     width: 12.5rem;
     border-radius: 5%;
-    background-color: rgba(255,255,255,0.05);; 
+    background-color: rgba(255,255,255,0.05);
 }
 #nav{
     height: 4rem;
@@ -27,34 +29,29 @@ nav img:hover {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    
-    
+    margin-bottom: 7rem;
 }
 #navLink{
     font-size: 25px;
     margin: 0 90px;
     align-items: center;
-    height: 100%;
     display: flex;
-    
-
 }
 #navLink h6{
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 0.8rem;
-    letter-spacing: 1.13px;
+    letter-spacing: 1.10px;
     display: flex;
     justify-content: center;
     margin: 0 1.5rem;
     padding: 20px 25px;
-    width: 7rem;
-    
+    width: 7rem;  
 }
 #navLink h6:hover {
-    transition: 0.30s;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 0.9rem;
-    letter-spacing: 1.15px;
+    transition: 0.20s;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 1.13px;
     color:rgba(0,100,200,1);
     border-radius: 5%;
     background-color: rgba(255,255,255,0.05);
@@ -62,22 +59,36 @@ nav img:hover {
 
                     /*Corpo do site*/
 
-#session1{
-    
-    margin-top: 70px;  
+#conteiner{
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    margin: 0 10px;
+    
+}
+.session1{
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    gap: 20px;
     align-items: center;
+    margin-bottom: 50px;
+    
 }
-#apresenta{
-    padding: 50px;
-    height: 100%;
+a{
+    text-decoration: none;
+    color: white;
 }
-#apresenta h1{
+#apresenta h1 {
     font-size: 2.1rem;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+}
+#apresenta p{
+    text-align: justify;
 }
 #foto{
-
+    
 }
 #foto img{
     opacity: 0.9;
@@ -90,28 +101,100 @@ nav img:hover {
     transition: 0.1s;
     border: 3.5px solid rgba(0,74,173);
 }
-
 #seta  { 
+    height: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    /*border: 1px solid red;*/
+    margin-bottom: 100px;
 }
 #seta img {
     padding: 20px;
-    width: 2rem;
+    width: 4.5rem;
     border-radius: 50%;
     transition: 0.1s;
 
 }
-
 #seta img:hover{
-    width: 2.3rem;
+    width: 4.8rem;
     padding: 20px;
     border-radius: 50%;
     
 }
 
+         /*Session projects*/
 
 
+.session2{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction:column ;
+    margin-bottom: 10rem;
+    height: 700px;
+}
+#caixa-itens{
+    display: flex;
+    flex-wrap: wrap;
+    width:100% ;
+    justify-content: center;
+}
 
+.itens{
+    text-decoration: solid;
+    border-radius: 5px;
+    margin: 10px;
+    width: 40%;
+    color: #000;
+    background-color: rgba(255,255,255,0.8);
+    height: 5rem;
+    transition: 0.4s;
+}
+.itens p {
+    color:rgba(0,100,200,1);
+}
+.itens:hover{
+    width: 43%;
+    height: 5.2rem;
+}
+
+         /*Session Redes Sociais*/
+
+.session3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+    margin-bottom: 20rem;
+    
+}
+
+#icon{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    transition: 0.5s;
+    gap: 50px;
+    margin-right: 45px;
+    
+}
+
+#icon ion-icon{
+    border-radius: 50%;
+    padding: 15px;
+    transition: 0.3s;
+}
+#icon ion-icon:hover{
+    font-size: 55px;
+    color: rgba(30,100,200,1); ;
+    background-color:  rgba(255,255,255,0.05);
+    cursor: pointer;
+}
+h2{
+    letter-spacing:5px;
+    font-size: 2.5rem;
+}

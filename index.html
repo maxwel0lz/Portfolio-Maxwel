@@ -5,36 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portifólio</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
-    <div id="Conteiner"></div>
-      <nav id = nav>
-        <img src="Assets/logo.png" alt="logo" />
-        <div id="navLink">
-          <h6>Sobre</h6>
-          <h6>Projetos</h6>
-          <h6>Redes Sociais</h6>
-        </div>
-      </nav> 
-      
-      <br>
+    <nav id="nav">
+      <img src="Assets/logo.png" alt="logo" />
+      <div id="navLink">
+        <a href="#nav"><h6>Sobre</h6></a>
+        <a href="#projetos"><h6>Projetos</h6></a>
+        <a href="#redes"><h6>Redes Sociais</h6></a>
+      </div>
+    </nav>
 
-      <div id="session1">
-        <div id="apresenta">
-          <h1>Olá, esse é o meu portifolio <br> proficional eu me chamo Maxwel Alves, <br> sou graduando em sistemas de informação. </h1>
-          
-          <h4>Aqui você vai encontrar todos os meus prejetos, Redes Socias e tecnologias com qual eu trabalho. </h4>
-        </div>
+    <div id="conteiner">
+      <section id="sobre" class="session1">
         <div id="foto">
-          <img src="Assets/Foto nevado.jpg" alt="">
-        </div>  
+          <img src="Assets/Foto nevado.jpg" alt="" />
+        </div>
+
+        <div id="apresenta">
+          <h1>Olá, me chamo Maxwel Alves</h1>
+          <p>
+            Sou apaixonado por tecnologia desde bem jovem Gosto muito da área de
+            desenvolvimento, resolver desafios é o que me dá tanta satisfação
+            com essa área. Sou brasileiro, estudante de sistemas de informação
+            no Centro Universitário Maurício de Nassau de Salvador. <br />
+            Ainda não tive oportunidade para entrar na área de tecnologia, porém
+            sigo estudando e fazendo projetos pessoas para desenvolver meus
+            conhecimentos e estar preparado para quando oportunidade surgir. Nas
+            horas vagas gosto de ver series e jogar fps.
+          </p>
+        </div>
+      </section>
+
+      <div id="seta">
+        <a href="#projetos"><img src="Assets/Seta.png" alt="seta" /></a>
       </div>
 
+      <section id="projetos" class="session2">
+        <h2>Projetos</h2>
+        <div id="caixa-itens">
+          <a target="_blank" class="itens" href="https://github.com/">
+            <div>
+              <p>Projeto GestaoLivros</p>
+            </div>
+          </a>
+          <a target="_blank" class="itens" href="https://github.com/">
+            <div>
+              <p>Projeto SocialLinks</p>
+            </div>
+          </a>
+          <a target="_blank" class="itens" href="https://github.com/">
+            <div>
+              <p>Projeto SocialLinks</p>
+            </div>
+          </a>
+        </div>
+      </section>
+      <section id="redes" class="session3">
+        <h2>Redes Sociais</h2>
+        <div id="icon">
+          <a href="https://www.youtube.com/" target="_blank"></a><ion-icon name="logo-instagram"></ion-icon></a>
+          <a href="https://www.youtube.com/" target="_blank"></a><ion-icon name="logo-linkedin"></ion-icon></a>
+          <a href="https://www.youtube.com/" target="_blank"></a><ion-icon name="logo-github"></ion-icon></a>
+          <a href="https://www.youtube.com/" target="_blank"></a><ion-icon name="logo-whatsapp"></ion-icon></a>
+        </div>
+      </section>
     </div>
-    
-    <div id="seta">
-      <a href=""><img src="Assets/Seta.png" alt="seta"></a>
-    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
+
+  
 </html>

@@ -2,67 +2,73 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 body{
     font-family: 'Poppins', sans-serif;
     color: white;
-    margin: 0;
-    padding: 0;
     background-color: rgba(40,40,40,0.98);
 }
                 /*Barra de Navegaão*/
 
+header{
+    padding: 5px;
+    height: fit-content;
+    width: 100%;
+    top: 0;
+    position:sticky ;
+    z-index: 1;
+    background-color: rgba(40,40,40,0.89);
+    cursor: pointer;
+    margin-bottom: 8rem;
+}
+
+header nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 100px;
+    padding: 10px 0;
+    border: 1px red solid;
+}
+header nav ul li {
+    width: fit-content;
+    height: fit-content;
+    font-size: small;
+    padding: 0 0.20rem;
+    
+}
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
 nav img{
-    width: 12rem;
-    margin: 0 50px;
-    width: 12rem;
+    border: 1px red solid;
+    width: 10rem;
+    margin: 0 25rem 0 3rem;
 }
 nav img:hover {
     transition: 0.25s;
-    width: 12.5rem;
+    width: 10.1rem;
     border-radius: 5%;
     background-color: rgba(255,255,255,0.05);
 }
-#nav{
-    height: 4rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 7rem;
-}
-#navLink{
-    font-size: 25px;
-    margin: 0 90px;
-    align-items: center;
-    display: flex;
-}
-#navLink h6{
-    font-family: 'Poppins', sans-serif;
-    font-size: 0.8rem;
-    letter-spacing: 1.10px;
-    display: flex;
-    justify-content: center;
-    margin: 0 1.5rem;
-    padding: 20px 25px;
-    width: 7rem;  
-}
-#navLink h6:hover {
-    transition: 0.20s;
-    font-family: 'Poppins', sans-serif;
-    font-size: 0.85rem;
-    letter-spacing: 1.13px;
-    color:rgba(0,100,200,1);
-    border-radius: 5%;
-    background-color: rgba(255,255,255,0.05);
-}
+
+
+
 
                     /*Corpo do site*/
 
 #conteiner{
+    border: red solid;
     display: flex;
     flex-direction: column;
-    margin: 0 10px;
+    justify-content: center;
+    width: 900px;
+    margin: auto;
+    padding: 24px;
     
 }
 .session1{
@@ -71,7 +77,9 @@ nav img:hover {
     display: flex;
     gap: 20px;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    
+
     
 }
 a{
@@ -107,14 +115,16 @@ a{
     align-items: center;
     justify-content: center;
     margin-bottom: 100px;
+    animation-name: baixo;
+    animation-duration: 1s;
 }
+
 #seta img {
     padding: 20px;
     width: 4.5rem;
     border-radius: 50%;
-    transition: 0.1s;
-
 }
+
 #seta img:hover{
     width: 4.8rem;
     padding: 20px;
@@ -140,6 +150,7 @@ a{
     justify-content: center;
 }
 
+
 .itens{
     text-decoration: solid;
     border-radius: 5px;
@@ -150,12 +161,22 @@ a{
     height: 5rem;
     transition: 0.4s;
 }
+.itens div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.iconis-projetos{
+    margin: 0 10px;
+    gap: 5px;
+
+}
 .itens p {
     color:rgba(0,100,200,1);
 }
 .itens:hover{
     width: 43%;
-    height: 5.2rem;
+    height: 5.08rem;
 }
 
          /*Session Redes Sociais*/
@@ -197,4 +218,16 @@ a{
 h2{
     letter-spacing:5px;
     font-size: 2.5rem;
+}
+@media screen and (max-width: 770px){
+    #caixa-itens{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width:100% ;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
 }

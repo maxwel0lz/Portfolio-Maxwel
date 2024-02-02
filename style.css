@@ -23,7 +23,7 @@ header{
     width: 100%;
 }
 nav{
-    border: 1px solid red;
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -59,7 +59,7 @@ nav ul li:hover{
                     /*Corpo do site*/
 
 #conteiner{
-    border: red solid;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -174,7 +174,7 @@ a{
          /*Session Redes Sociais*/
 
 .session3{
-    border: solid red 1px;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;

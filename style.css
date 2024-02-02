@@ -8,52 +8,49 @@
 body{
     font-family: 'Poppins', sans-serif;
     color: white;
-    background-color: rgba(40,40,40,0.98);
+    background-color: rgba(40,40,40,1);
 }
                 /*Barra de Navegaão*/
 
 header{
     padding: 5px;
-    height: fit-content;
-    width: 100%;
     top: 0;
-    position:sticky ;
+    position:sticky;
     z-index: 1;
-    background-color: rgba(40,40,40,0.89);
+    background-color: rgba(40,40,40,1);
     cursor: pointer;
     margin-bottom: 8rem;
-}
-
-header nav ul{
-    display: flex;
-    align-items: center;
-    list-style: none;
-    gap: 100px;
-    padding: 10px 0;
-    border: 1px red solid;
-}
-header nav ul li {
-    width: fit-content;
-    height: fit-content;
-    font-size: small;
-    padding: 0 0.20rem;
-    
+    width: 100%;
 }
 nav{
-    width: 100%;
+    border: 1px solid red;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
-nav img{
-    border: 1px red solid;
-    width: 10rem;
-    margin: 0 25rem 0 3rem;
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 70px;
+    margin: 0 4rem;
 }
+#logo{
+    margin: 8px 0 0 60px;
+    width: 13rem;
+    padding: 5px;
+}
+
+
+
 nav img:hover {
     transition: 0.25s;
     width: 10.1rem;
     border-radius: 5%;
     background-color: rgba(255,255,255,0.05);
+}
+nav ul li:hover{
+    color: rgba( 0,74,173,1);
 }
 
 
@@ -66,7 +63,7 @@ nav img:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 900px;
+    width: 90%;
     margin: auto;
     padding: 24px;
     
@@ -78,9 +75,6 @@ nav img:hover {
     gap: 20px;
     align-items: center;
     margin-bottom: 40px;
-    
-
-    
 }
 a{
     text-decoration: none;
@@ -107,7 +101,7 @@ a{
 }
 #foto img:hover {
     transition: 0.1s;
-    border: 3.5px solid rgba(0,74,173);
+    border: 3.5px solid rgba(0,74,173,1);
 }
 #seta  { 
     height: 5rem;
@@ -115,8 +109,6 @@ a{
     align-items: center;
     justify-content: center;
     margin-bottom: 100px;
-    animation-name: baixo;
-    animation-duration: 1s;
 }
 
 #seta img {
@@ -172,7 +164,7 @@ a{
 
 }
 .itens p {
-    color:rgba(0,100,200,1);
+    color:rgba(0,0,0,1);
 }
 .itens:hover{
     width: 43%;
@@ -182,18 +174,17 @@ a{
          /*Session Redes Sociais*/
 
 .session3{
+    border: solid red 1px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 700px;
     margin-bottom: 20rem;
     
 }
 
 #icon{
-    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -216,6 +207,7 @@ a{
     cursor: pointer;
 }
 h2{
+    margin: 30px 0;
     letter-spacing:5px;
     font-size: 2.5rem;
 }
@@ -228,6 +220,35 @@ h2{
         justify-content: center;
         align-items: center;
     }
-    
+    .session1{
+        flex-direction: column;
+    }
+    #logo{
+        margin: 0;
+    }
+    .itens{
+        width: 80%;
+    }
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    #icon{
+        font-size: 30px;
+        gap: 30px;
+    }
+    #icon ion-icon:hover{
+        font-size: 33px;
+        color: rgba(30,100,200,1); ;
+        background-color:  rgba(255,255,255,0.05);
+        cursor: pointer;
+    }
+    #apresenta{
+        text-align: center;
+    }
+    h2{
+        letter-spacing:3px;
+        font-size: 2rem;
+    }
 
 }

@@ -19,11 +19,10 @@ header{
     z-index: 1;
     background-color: rgba(40,40,40,1);
     cursor: pointer;
-    margin-bottom: 8rem;
+    margin-bottom: 2rem;
     width: 100%;
 }
 nav{
-    
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -41,8 +40,6 @@ nav ul{
     padding: 5px;
 }
 
-
-
 nav img:hover {
     transition: 0.25s;
     width: 10.1rem;
@@ -59,18 +56,16 @@ nav ul li:hover{
                     /*Corpo do site*/
 
 #conteiner{
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 90%;
     margin: auto;
     padding: 24px;
-    
 }
 .session1{
-    margin: 0 auto;
-    width: 80%;
+    margin: 5rem auto;
+    width: 100%;
     display: flex;
     gap: 20px;
     align-items: center;
@@ -110,7 +105,6 @@ a{
     justify-content: center;
     margin-bottom: 100px;
 }
-
 #seta img {
     padding: 20px;
     width: 4.5rem;
@@ -132,8 +126,7 @@ a{
     display: flex;
     justify-content: center;
     flex-direction:column ;
-    margin-bottom: 10rem;
-    height: 700px;
+    height: 100vh;
 }
 #caixa-itens{
     display: flex;
@@ -141,13 +134,11 @@ a{
     width:100% ;
     justify-content: center;
 }
-
-
 .itens{
     text-decoration: solid;
     border-radius: 5px;
     margin: 10px;
-    width: 40%;
+    width: 35vw;
     color: #000;
     background-color: rgba(255,255,255,0.8);
     height: 5rem;
@@ -167,46 +158,45 @@ a{
     color:rgba(0,0,0,1);
 }
 .itens:hover{
-    width: 43%;
+    width: 36vw;
     height: 5.08rem;
 }
 
          /*Session Redes Sociais*/
 
 .session3{
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 100vh;
     margin-bottom: 20rem;
-    
 }
 
 #icon{
+    height: 20vh;
     display: flex;
+    gap: 3vw;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
-    transition: 0.5s;
-    gap: 50px;
-    margin-right: 45px;
-    
 }
 
 #icon ion-icon{
+    margin-right: 20px;
+    font-size: 4vw;
+    
     border-radius: 50%;
     padding: 15px;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 #icon ion-icon:hover{
-    font-size: 55px;
-    color: rgba(30,100,200,1); ;
+    color: rgba(30,100,200,1);
     background-color:  rgba(255,255,255,0.05);
     cursor: pointer;
 }
 h2{
+    text-align: center;
     margin: 30px 0;
     letter-spacing:5px;
     font-size: 2.5rem;
@@ -225,26 +215,29 @@ h2{
     }
     #logo{
         margin: 0;
+        width: 8rem;
     }
     .itens{
-        width: 80%;
+        width: 60vw;
+    }
+    .itens:hover{
+        width: 63vw;
+    }
+    #apresenta{
+        text-align: center;
     }
     nav{
         flex-direction: column;
         align-items: center;
     }
-    #icon{
-        font-size: 30px;
-        gap: 30px;
-    }
-    #icon ion-icon:hover{
-        font-size: 33px;
-        color: rgba(30,100,200,1); ;
-        background-color:  rgba(255,255,255,0.05);
-        cursor: pointer;
-    }
-    #apresenta{
-        text-align: center;
+    nav ul{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        border-radius: 10px;
+        background-color: rgba(255,255,255,0.05);
+        font-size: 0.7rem;
     }
     h2{
         letter-spacing:3px;
@@ -252,3 +245,5 @@ h2{
     }
 
 }
+
+
